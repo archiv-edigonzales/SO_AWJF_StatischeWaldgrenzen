@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.3.0-21cbac10c7e35a41346af1c5fc5d6980bb99609d" VERSION="2.3"><MODELS><MODEL NAME="SO_AWJF_StatischeWaldgrenzen_20191017" VERSION="2019-10-17" URI="http://www.geo.so.ch/models/AWJF"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<SO_AWJF_StatischeWaldgrenzen_20191017.Geobasisdaten BID="SO_AWJF_StatischeWaldgrenzen_20191017.Geobasisdaten">
+<Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ TID="187"><Code>aaa</Code><Bezeichnung>bbb</Bezeichnung><Abkuerzung>ccc</Abkuerzung><Verbindlichkeit>Nutzungsplanfestlegung</Verbindlichkeit><Bemerkungen>fubar</Bemerkungen><Art>ausserhalb_Bauzonen</Art></Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ>
+<Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ TID="188"><Code>111</Code><Bezeichnung>222</Bezeichnung><Abkuerzung>333</Abkuerzung><Verbindlichkeit>orientierend</Verbindlichkeit><Bemerkungen>444</Bemerkungen><Art>in_Bauzonen</Art></Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ>
+</SO_AWJF_StatischeWaldgrenzen_20191017.Geobasisdaten>
+<SO_AWJF_StatischeWaldgrenzen_20191017.Rechtsvorschriften BID="SO_AWJF_StatischeWaldgrenzen_20191017.Rechtsvorschriften">
+</SO_AWJF_StatischeWaldgrenzen_20191017.Rechtsvorschriften>
+</DATASECTION>
+</TRANSFER>
