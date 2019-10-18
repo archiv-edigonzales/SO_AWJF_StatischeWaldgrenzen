@@ -1,0 +1,25 @@
+INTERLIS 2.3;
+
+/** ------------------------------------------------------------------------------ 
+ *  Version    | wer | Aenderung 
+ *  ------------------------------------------------------------------------------ 
+ * 2019-10-17 | AL  | Erweiterung vom minimalen Geodatenmodell Waldgrenzen_LV95_V1_1  
+ * ==============================================================================
+ */
+!!@ technicalContact=agi@so.ch
+MODEL SO_AWJF_StatischeWaldgrenzen_20191017 (de)
+AT "http://www.geo.so.ch/models/AWJF"
+VERSION "2019-10-17"  =
+  IMPORTS CHAdminCodes_V1,GeometryCHLV95_V1,Waldgrenzen_LV95_V1_1;
+
+  TOPIC Geobasisdaten
+  EXTENDS Waldgrenzen_LV95_V1_1.Geobasisdaten =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Typ (EXTENDED) =
+      Kt_Nummer : TEXT*80;
+    END Typ;
+
+  END Geobasisdaten;
+
+END SO_AWJF_StatischeWaldgrenzen_20191017.

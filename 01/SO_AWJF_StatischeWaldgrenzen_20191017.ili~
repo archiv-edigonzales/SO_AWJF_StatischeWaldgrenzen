@@ -1,0 +1,72 @@
+INTERLIS 2.3;
+
+/** ------------------------------------------------------------------------------ 
+ *  Version    | wer | Aenderung 
+ *  ------------------------------------------------------------------------------ 
+ * 2019-10-17 | AL  | Erweiterung vom minimalen Geodatenmodell Waldgrenzen_LV95_V1_1  
+ * ==============================================================================
+ */
+!!@ technicalContact=agi@so.ch
+MODEL SO_AWJF_StatischeWaldgrenzen_20191017 (de)
+AT "http://www.geo.so.ch/models/AWJF"
+VERSION "2019-10-17"  =
+  IMPORTS CHAdminCodes_V1,GeometryCHLV95_V1,Waldgrenzen_LV95_V1_1;
+
+  DOMAIN
+
+    Art_Waldgrenze
+    EXTENDS Waldgrenzen_LV95_V1_1.Art_Waldgrenze = (
+      Einzelfeststellung,
+      anderes_Verfahren
+    );
+
+    Rechtsstatus
+    EXTENDS Waldgrenzen_LV95_V1_1.Rechtsstatus = (
+      aufgehoben
+    );
+
+  TOPIC Geobasisdaten
+  EXTENDS Waldgrenzen_LV95_V1_1.Geobasisdaten =
+    OID AS INTERLIS.UUIDOID;
+
+    /** Der Wald liegt immer links der Linie.
+     */
+    CLASS Waldgrenze_Linie (EXTENDED) =
+      /** Name der Firma, welche die Daten erfasst hat
+       */
+      Erfasser : TEXT*80;
+      /** Datum wann die Daten erfasst sind.
+       */
+      Datum_Erfassung : INTERLIS.XMLDate;
+      /** Datum der Archivierung. Daten sind nicht mehr g�ltig.
+       */
+      Datum_Archivierung : INTERLIS.XMLDate;
+      /** Datum der Genehmigung.
+       */
+      genehmigt_am : INTERLIS.XMLDate;
+      /** Nummer wird vergeben duch das AWJF
+       */
+      Nummer : TEXT*80;
+    END Waldgrenze_Linie;
+
+  END Geobasisdaten;
+
+  TOPIC Rechtsvorschriften
+  EXTENDS Waldgrenzen_LV95_V1_1.Rechtsvorschriften =
+    OID AS INTERLIS.UUIDOID;
+
+    CLASS Rechtsvorschrift (EXTENDED) =
+      Typ : (
+        Waldfeststellungsplan,
+        RRB,
+        Bericht,
+        Verfuegung
+      );
+      /** Datum der Genehmigung
+       */
+      genehmigt_am : INTERLIS.XMLDate;
+    END Rechtsvorschrift;
+
+  END Rechtsvorschriften;
+
+END SO_AWJF_StatischeWaldgrenzen_20191017.

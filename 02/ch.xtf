@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><TRANSFER xmlns="http://www.interlis.ch/INTERLIS2.3">
+<HEADERSECTION SENDER="ili2pg-4.3.0-21cbac10c7e35a41346af1c5fc5d6980bb99609d" VERSION="2.3"><MODELS><MODEL NAME="Waldgrenzen_LV95_V1_1" VERSION="2019-08-09" URI="http://models.geo.admin.ch/BAFU"></MODEL></MODELS></HEADERSECTION>
+<DATASECTION>
+<Waldgrenzen_LV95_V1_1.Rechtsvorschriften BID="Waldgrenzen_LV95_V1_1.Rechtsvorschriften">
+</Waldgrenzen_LV95_V1_1.Rechtsvorschriften>
+<Waldgrenzen_LV95_V1_1.Geobasisdaten BID="Waldgrenzen_LV95_V1_1.Geobasisdaten">
+<Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ TID="179"><Code>1</Code><Bezeichnung>1</Bezeichnung><Abkuerzung>1</Abkuerzung><Verbindlichkeit>Nutzungsplanfestlegung</Verbindlichkeit><Bemerkungen>1</Bemerkungen><Art>in_Bauzonen</Art></Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ>
+<Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ TID="180"><Code>2</Code><Bezeichnung>2</Bezeichnung><Abkuerzung>2</Abkuerzung><Verbindlichkeit>Nutzungsplanfestlegung</Verbindlichkeit><Bemerkungen>2</Bemerkungen><Art>in_Bauzonen</Art></Waldgrenzen_LV95_V1_1.Geobasisdaten.Typ>
+</Waldgrenzen_LV95_V1_1.Geobasisdaten>
+</DATASECTION>
+</TRANSFER>
