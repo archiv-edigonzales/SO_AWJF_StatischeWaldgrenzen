@@ -50,11 +50,11 @@ java -jar /Users/stefan/apps/ili2pg-4.3.0/ili2pg-4.3.0.jar --dbhost localhost --
 ```
 INSERT INTO 
     awjf_waldgrenzen_02.geobasisdaten_typ (t_type, t_ili_tid, acode, bezeichnung, abkuerzung, verbindlichkeit, bemerkungen, art, kt_nummer)
-VALUES('geobasisdaten_typ_kt', uuid_generate_v4(), '1', '1', '1', 172, '1', 140, 'kantonsnummer');
+VALUES('geobasisdaten_typ_kt', uuid_generate_v4(), '1', '1', '1', 1, '1', 5, 'kantonsnummer');
 
 INSERT INTO 
     awjf_waldgrenzen_02.geobasisdaten_typ (t_type, t_ili_tid, acode, bezeichnung, abkuerzung, verbindlichkeit, bemerkungen, art, kt_nummer)
-VALUES('geobasisdaten_typ', uuid_generate_v4(), '2', '2', '2', 172, '2', 140, '');
+VALUES('geobasisdaten_typ', uuid_generate_v4(), '2', '2', '2', 1, '2', 5, '');
 ```
 
 ```
